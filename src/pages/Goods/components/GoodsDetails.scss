@@ -1,0 +1,67 @@
+.goods-details {
+  height: 500px;
+  overflow-y: scroll;
+
+  .carousel-img {
+    height: 200px;
+  }
+
+  .title {
+    margin-top: 12px;
+  }
+
+  .specs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .spec-item {
+    width: 220px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    border: 1px solid #EEEEEE;
+    border-radius: 6px;
+
+    &.selected {
+      border-color: cornflowerblue;
+      color: cornflowerblue;
+    }
+  }
+
+
+  .price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .goods {
+    display: grid;
+    grid-template: repeat(2, 35px) / repeat(3, 1fr) ;
+    line-height: 45px;
+  }
+  .up-time {
+    grid-column: 2/4;
+  }
+  .title-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+
+    .line {
+      width: 45px;
+      height: 1px;
+      background-color: #808080;
+    }
+    h1 {
+      margin: 0 8px;
+      font-size: 16px;
+    }
+  }
+}

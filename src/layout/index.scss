@@ -1,0 +1,27 @@
+.layout {
+  height: 100vh;
+  :global {
+    .ant-layout-header {
+      background-color: #FFFFFF;
+    }
+    .title-box {
+      padding-top: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, .1);
+    }
+    .logo {
+      width: 50px;
+      margin-bottom: 8px;
+    }
+    .title {
+      color: #f5f5f5;
+      font-weight: bold;
+    }
+    .site-layout-background {
+      background: #FFFFFF;
+    }
+  }
+}
